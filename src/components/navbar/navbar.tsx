@@ -10,6 +10,7 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import Box from '@mui/material/Box';
+import './navbar.css';
 
 const Navbar: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -27,30 +28,30 @@ const Navbar: React.FC = () => {
   return (
     <>
       {/* Top AppBar */}
-      <AppBar position="fixed" sx={{ backgroundColor: '#e28546', boxShadow: 'none' }}>
+      <AppBar position="fixed" className="app-bar">
         <Toolbar>
           {/* Menu Button (for mobile view) */}
           <IconButton
             edge="start"
             color="inherit"
             aria-label="menu"
-            sx={{ display: { xs: 'block', md: 'none' } }}
+            className="menu-icon"
             onClick={toggleDrawer(true)}
           >
             <MenuIcon />
           </IconButton>
 
           {/* Logo/Title */}
-          <Typography variant="h6" sx={{ flexGrow: 1, fontWeight: 'bold', color: 'white', textAlign: 'left'}}>
-            <a href="/" style={{ color: 'inherit', textDecoration: 'none' }}>
+          <Typography variant="h6" className="nav-title">
+            <a href="/" className="nav-link">
               Fateh Care
             </a>
           </Typography>
 
           {/* Nav Buttons (visible only on larger screens) */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+          <Box className="nav-buttons">
             {menuItems.map((item) => (
-              <Button key={item.text} color="inherit" sx={{ color: 'white', fontWeight: 'bold' }}>
+              <Button key={item.text} color="inherit" className="nav-button">
                 {item.text}
               </Button>
             ))}
@@ -61,20 +62,12 @@ const Navbar: React.FC = () => {
       {/* Drawer for Mobile Navigation */}
       <Drawer anchor="left" open={drawerOpen} onClose={toggleDrawer(false)}>
         <Box
-          sx={{ width: 250, backgroundColor: '#ffffff', height: '100%' }}
+          className="drawer-container"
           role="presentation"
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
-          <Typography
-            variant="h6"
-            sx={{
-              padding: '16px',
-              fontWeight: 'bold',
-              color: '#e28546',
-              textAlign: 'center',
-            }}
-          >
+          <Typography variant="h6" className="drawer-title">
             Fateh Care
           </Typography>
           <List>
@@ -82,7 +75,7 @@ const Navbar: React.FC = () => {
               <ListItem button key={item.text}>
                 <ListItemText
                   primary={item.text}
-                  primaryTypographyProps={{ fontSize: '1rem', fontWeight: 'bold' }}
+                  className="drawer-item-text"
                 />
               </ListItem>
             ))}
