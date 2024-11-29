@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
     <>
       {/* Top AppBar */}
       <AppBar position="fixed" className="app-bar">
-        <Toolbar>
+        <Toolbar className="toolbar">
           {/* Menu Button (for mobile view) */}
           <IconButton
             edge="start"
