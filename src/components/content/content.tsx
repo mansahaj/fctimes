@@ -6,24 +6,16 @@ import { pdfFiles, PdfFile } from './pdfFiles.ts';
 // Set the modal app element
 Modal.setAppElement('#root');
 
-interface PdfFile {
-  title: string;
-  file: string;
-  preview: string;
-}
-
 const Content: React.FC = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
 
-  const isSmallScreen = window.innerWidth <= 600; // Detect small screens
+  const isSmallScreen = window.innerWidth <= 600;
 
   const openPdf = (file: string) => {
     if (isSmallScreen) {
-      // Open in a new tab for small screens
       window.open(file, '_blank');
     } else {
-      // Open in modal for larger screens
       setSelectedPdf(file);
       setModalOpen(true);
     }
@@ -53,7 +45,6 @@ const Content: React.FC = () => {
         ))}
       </div>
 
-      {/* Modal for larger screens */}
       {!isSmallScreen && (
         <Modal
           isOpen={modalOpen}
@@ -61,7 +52,8 @@ const Content: React.FC = () => {
           style={{
             content: {
               width: '80%',
-              height: '80%',
+              top: '10%', // Keep the top position fixed
+              bottom: '5%', // Increase the height from the bottom
               padding: 0,
               margin: 'auto',
               border: 'none',
@@ -73,15 +65,9 @@ const Content: React.FC = () => {
           {selectedPdf && (
             <div className="modal-content">
               <iframe
-                src={selectedPdf}
+                src={selectedPdf} // Hides the toolbar
                 title="PDF Viewer"
-                width="100%"
-                height="100%"
-                style={{ border: 'none' }}
               />
-              <button className="close-btn" onClick={closeModal}>
-                Close
-              </button>
             </div>
           )}
         </Modal>
