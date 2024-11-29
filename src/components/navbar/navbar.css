@@ -1,0 +1,43 @@
+/* General Navbar Styling */
+.navbar {
+  background-color: white;
+  color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button {
+  color: black; /* Ensures the hamburger menu icon is visible */
+  display: none;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Buttons for Desktop View */
+.nav-button {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  .nav-buttons {
+    display: none; /* Hide buttons in mobile view */
+  }
+
+  .menu-button {
+    display: block; /* Show hamburger menu icon */
+  }
+}
