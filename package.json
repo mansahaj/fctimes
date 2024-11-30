@@ -2,6 +2,7 @@
   "name": "fctimes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mansahaj.github.io/fctimes",
   "dependencies": {
     "@emotion/react": "^11.13.5",
     "@emotion/styled": "^11.13.5",
@@ -44,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
