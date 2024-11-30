@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fctimes/static/css/main.d178275d.css",
+    "main.js": "/fctimes/static/js/main.cb4f9942.js",
+    "static/js/453.e1901a08.chunk.js": "/fctimes/static/js/453.e1901a08.chunk.js",
+    "index.html": "/fctimes/index.html",
+    "main.d178275d.css.map": "/fctimes/static/css/main.d178275d.css.map",
+    "main.cb4f9942.js.map": "/fctimes/static/js/main.cb4f9942.js.map",
+    "453.e1901a08.chunk.js.map": "/fctimes/static/js/453.e1901a08.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d178275d.css",
+    "static/js/main.cb4f9942.js"
+  ]
+}
