@@ -28,6 +28,6 @@ def extract_pdf_first_page(pdf_path, output_path):
         print(f"Error: {e}")
 
 # Example usage
-pdf_path = "public/news/month1_news.pdf"  # Path to the news PDF file
-output_path = "public/previews/month1_preview.jpg"  # Desired output path
+pdf_path = "public/news/november_news.pdf"  # Path to the news PDF file
+output_path = "public/previews/november_preview.jpg"  # Desired output path
 extract_pdf_first_page(pdf_path, output_path)

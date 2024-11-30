@@ -6,8 +6,6 @@ export interface PdfFile {
   }
   
   export const pdfFiles: PdfFile[] = [
-    { title: 'Month 1 News', file: '/news/month1_news.pdf', preview: '/previews/month1_preview.jpg' },
-    { title: 'Month 2 News', file: '/news/month2_news.pdf', preview: '/previews/month2_preview.jpg' },
-    { title: 'Month 3 News', file: '/news/month3_news.pdf', preview: '/previews/month3_preview.jpg' },
-    { title: 'Month 4 News', file: '/news/month4_news.pdf', preview: '/previews/month4_preview.jpg' },
+    { title: 'October 2024', file: '/news/october_news.pdf', preview: '/previews/month1_preview.jpg' },
+    { title: 'November 2024', file: '/news/october_news.pdf', preview: '/previews/november_preview.jpg' },
   ];

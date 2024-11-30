@@ -1,6 +1,6 @@
 /* AppBar Styling */
 .app-bar {
-  background-color: #e28546 !important;
+  background-color: white !important;
   width: 100% !important;
   max-width: 100vw;
   overflow-x: hidden;
@@ -21,7 +21,7 @@
 .nav-title {
   flex-grow: 1;
   font-weight: bold !important;
-  color: white !important;
+  color: black !important;
   text-align: left;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .nav-button {
-  color: white !important;
+  color: black !important;
   font-weight: bold !important;
 }
 
@@ -86,7 +86,7 @@
 
 /* Logo Styling */
 .nav-logo {
-  height: 40px;
+  height: 60px;  /* increased from 40px */
   width: auto;
   vertical-align: middle;
 }
@@ -97,7 +97,7 @@
 }
 
 .drawer-logo {
-  height: 60px;
+  height: 80px;  /* increased from 60px */
   width: auto;
 }
 

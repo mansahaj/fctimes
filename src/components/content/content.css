@@ -58,4 +58,41 @@ iframe {
   border: none;
 }
 
+/* About section styling */
+.about-section {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.about-section h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 20px;
+  color: #444;
+  margin: 25px 0 15px;
+}
+
+.about-content p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.signature {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.signature p {
+  margin: 5px 0;
+  line-height: 1.3;
+}
+
 

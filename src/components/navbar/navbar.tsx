@@ -41,10 +41,14 @@ const Navbar: React.FC = () => {
             <MenuIcon />
           </IconButton>
 
-          {/* Logo/Title */}
+          {/* Updated Logo section */}
           <Typography variant="h6" className="nav-title">
             <a href="/" className="nav-link">
-              Fateh Care
+              <img
+                src="pictures/fatehcare_sign.jpeg"
+                alt="Fateh Care"
+                className="nav-logo"
+              />
             </a>
           </Typography>
 
@@ -67,9 +71,14 @@ const Navbar: React.FC = () => {
           onClick={toggleDrawer(false)}
           onKeyDown={toggleDrawer(false)}
         >
-          <Typography variant="h6" className="drawer-title">
-            Fateh Care
-          </Typography>
+          {/* Updated Drawer logo section */}
+          <div className="drawer-logo-container">
+            <img
+              src="/fatehcare-logo.png"
+              alt="Fateh Care"
+              className="drawer-logo"
+            />
+          </div>
           <List>
             {menuItems.map((item) => (
               <ListItem button key={item.text}>
